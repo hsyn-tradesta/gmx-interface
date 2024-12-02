@@ -101,12 +101,6 @@ export function chooseSuitableMarket({
 }):
   | { indexTokenAddress: string; marketTokenAddress?: string; tradeType: TradeType; collateralTokenAddress?: string }
   | undefined {
-  if (isSwap) {
-    return {
-      indexTokenAddress,
-      tradeType: TradeType.Swap,
-    };
-  }
   const maxLiquidtyPool = preferredTradeType === TradeType.Long ? maxLongLiquidityPool : maxShortLiquidityPool;
 
   if (preferredTradeType === "largestPosition" && positionsInfo) {

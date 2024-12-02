@@ -197,9 +197,6 @@ function TVChartHeaderInfoMobile() {
             <div className="ExchangeChart-daily-change">{dayPriceDelta}</div>
           </div>
         </div>
-        <div className="flex items-start justify-center">
-          <VersionSwitch />
-        </div>
       </div>
       {details}
     </div>
@@ -464,7 +461,6 @@ function TVChartHeaderInfoDesktop() {
         </div>
       </div>
       <div className="ExchangeChart-info VersionSwitch-wrapper">
-        <VersionSwitch />
       </div>
     </div>
   );

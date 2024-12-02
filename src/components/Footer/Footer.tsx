@@ -9,7 +9,7 @@ import { SOCIAL_LINKS, getFooterLinks } from "./constants";
 import ExternalLink from "components/ExternalLink/ExternalLink";
 import { UserFeedbackModal } from "../UserFeedbackModal/UserFeedbackModal";
 
-import logoImg from "img/ic_gmx_footer.svg";
+import logoImg from "img/tradesta-logo.svg";
 
 import { TrackingLink } from "components/TrackingLink/TrackingLink";
 import { userAnalytics } from "lib/userAnalytics";

@@ -1,35 +1,35 @@
 /* eslint-disable */
 
-const range = require("lodash/range");
-const fromPairs = require("lodash/fromPairs");
-const merge = require("lodash/merge");
-const defaultConfig = require("tailwindcss/defaultConfig");
+import range  from "lodash/range";
+import fromPairs from "lodash/fromPairs";
+import merge from "lodash/merge";
+import defaultConfig from "tailwindcss/defaultConfig";
 
 const colors = {
   blue: {
-    300: "#7885ff",
-    400: "#4d5ffa",
-    500: "#3d51ff",
-    600: "#2d42fc",
-    700: "#2e3dcd",
+    300: "#5fffd7", // Light, vibrant greenish-blue
+    400: "#33ffaa", // Slightly deeper, closer to aqua
+    500: "#03ffa3", // Main vibrant shade (your original color)
+    600: "#02d389", // Slightly darker green-blue
+    700: "#01a36b", // Deep, muted tone for contrast
   },
   "cold-blue": {
-    500: "#3a3f79",
-    700: "#3a3f798f",
-    900: "#1e203e",
+    500: "#2f6857", // Muted and cooler tone to balance vibrancy
+    700: "#2f68578f", // Transparent version for overlays
+    900: "#1b3e34", // Deep, cold shade for backgrounds or accents
   },
   "pale-blue": {
-    100: "rgba(180,187,255, 0.1)",
-    600: "rgba(180,187,255, 0.6)",
+    100: "rgba(3, 255, 163, 0.1)", // Very light and translucent
+    600: "rgba(3, 255, 163, 0.6)", // Semi-transparent vibrant tone
   },
   slate: {
-    100: "#a0a3c4",
-    500: "#3e4361",
-    600: "#373c58",
-    700: "#23263b",
-    800: "#16182e",
-    900: "#101124",
-    950: "#08091b",
+    100: "#d6d6d6", // Very light gray
+    500: "#4d4d4d", // Medium gray
+    600: "#3a3a3a", // Slightly darker gray
+    700: "#262626", // Dark gray
+    800: "#1a1a1a", // Very dark gray
+    900: "#101010", // Near-black
+    950: "#000000", // Pure black
   },
   gray: {
     50: "rgba(255, 255, 255, 0.95)",
@@ -164,7 +164,7 @@ module.exports = {
       15: "1.5rem",
       16: "1.6rem",
       24: "2.4rem",
-      34: "3.4rem",      
+      34: "3.4rem",
     },
     lineHeight: {
       1: "1",

@@ -111,12 +111,6 @@ export function AppHeaderUser({ openSettings, small, disconnectAccountAndCloseSe
               {small ? <Trans>Connect</Trans> : <Trans>Connect Wallet</Trans>}
             </ConnectWalletButton>
             {!small && <NotifyButton />}
-            <NetworkDropdown
-              small={small}
-              networkOptions={NETWORK_OPTIONS}
-              selectorLabel={selectorLabel}
-              openSettings={openSettings}
-            />
           </>
         ) : (
           <LanguagePopupHome />

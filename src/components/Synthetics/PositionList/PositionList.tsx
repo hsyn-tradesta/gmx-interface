@@ -105,6 +105,9 @@ export function PositionList(p: Props) {
               <TableTh>
                 <Trans>Liq. Price</Trans>
               </TableTh>
+              <TableTh>
+                <Trans>Provider</Trans>
+              </TableTh>
               {!isLoading && !p.hideActions && (
                 <>
                   <TableTh></TableTh>
@@ -114,7 +117,33 @@ export function PositionList(p: Props) {
             </TableTheadTr>
           </thead>
           <tbody>
-            {positions.length === 0 && (
+          <TableTr>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+            <TableTd>
+              <Trans>Provider</Trans>
+            </TableTd>
+          </TableTr>
+            {/*{positions.length === 0 && (
               <TableTr hoverable={false} bordered={false}>
                 <TableTd colSpan={15}>
                   <div className="text-gray-400">{isLoading ? t`Loading...` : t`No open positions`}</div>
@@ -136,7 +165,7 @@ export function PositionList(p: Props) {
                   hideActions={hideActions}
                   onCancelOrder={onCancelOrder}
                 />
-              ))}
+              ))}*/}
           </tbody>
         </Table>
       )}

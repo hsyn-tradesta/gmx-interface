@@ -158,7 +158,6 @@ export type Props = {
 const tradeTypeIcons = {
   [TradeType.Long]: <LongIcon />,
   [TradeType.Short]: <ShortIcon />,
-  [TradeType.Swap]: <SwapIcon />,
 };
 
 const tradeModeLabels = {
@@ -170,7 +169,6 @@ const tradeModeLabels = {
 const tradeTypeLabels = {
   [TradeType.Long]: msg`Long`,
   [TradeType.Short]: msg`Short`,
-  [TradeType.Swap]: msg`Swap`,
 };
 
 export function TradeBox(p: Props) {

@@ -172,5 +172,5 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@4.5.3"
 }

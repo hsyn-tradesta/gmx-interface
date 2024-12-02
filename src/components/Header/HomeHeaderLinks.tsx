@@ -1,5 +1,5 @@
 import { t } from "@lingui/macro";
-import logoImg from "img/logo_GMX.svg";
+import logoImg from "img/tradesta-logo.svg";
 import { FiX } from "react-icons/fi";
 
 import ExternalLink from "components/ExternalLink/ExternalLink";
