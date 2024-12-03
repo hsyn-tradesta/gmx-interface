@@ -1,5 +1,5 @@
 import { Trans, t } from "@lingui/macro";
-import { memo, useCallback, useState } from "react";
+import React, { memo, useCallback, useState } from "react";
 import { useMedia } from "react-use";
 
 import { useIsPositionsLoading, usePositionsInfoData } from "context/SyntheticsStateContext/hooks/globalsHooks";
@@ -18,6 +18,8 @@ import { PositionItem } from "components/Synthetics/PositionItem/PositionItem";
 import { Table, TableTd, TableTh, TableTheadTr, TableTr } from "components/Table/Table";
 import { userAnalytics } from "lib/userAnalytics";
 import { SharePositionClickEvent } from "lib/userAnalytics/types";
+import token1 from "../../../img/ic_gmx_30.svg";
+import token2 from "../../../img/ic_avax_30.svg";
 
 type Props = {
   onSelectPositionClick: (key: string, tradeMode?: TradeMode) => void;
@@ -117,32 +119,58 @@ export function PositionList(p: Props) {
             </TableTheadTr>
           </thead>
           <tbody>
-          <TableTr>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-            <TableTd>
-              <Trans>Provider</Trans>
-            </TableTd>
-          </TableTr>
+            <TableTr>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>BTC/USDT</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>1 BTC</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>30000</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>4000</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>29588</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>29589</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>24000</Trans>
+              </TableTd>
+              <TableTd>
+                <img src={token1} className="big" alt="GMX Logo" />
+              </TableTd>
+            </TableTr>
+            <TableTr>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>BTC/USDT</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>1 BTC</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>30000</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>4000</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>29588</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>29589</Trans>
+              </TableTd>
+              <TableTd style={{ fontWeight: "bold" }}>
+                <Trans>24000</Trans>
+              </TableTd>
+              <TableTd>
+                <img src={token2} className="big" alt="GMX Logo" />
+              </TableTd>
+            </TableTr>
             {/*{positions.length === 0 && (
               <TableTr hoverable={false} bordered={false}>
                 <TableTd colSpan={15}>

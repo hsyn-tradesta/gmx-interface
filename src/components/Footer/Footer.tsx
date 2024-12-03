@@ -28,31 +28,6 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
         <div className="Footer-logo">
           <img src={logoImg} alt="MetaMask" />
         </div>
-        <div className="Footer-social-link-block">
-          {SOCIAL_LINKS.map((platform) => {
-            return (
-              <TrackingLink
-                key={platform.name}
-                onClick={async () => {
-                  await userAnalytics.pushEvent<LandingPageFooterMenuEvent>(
-                    {
-                      event: "LandingPageAction",
-                      data: {
-                        action: "FooterMenu",
-                        button: platform.name,
-                      },
-                    },
-                    { instantSend: true }
-                  );
-                }}
-              >
-                <ExternalLink className="App-social-link" href={platform.link}>
-                  <img src={platform.icon} alt={platform.name} />
-                </ExternalLink>
-              </TrackingLink>
-            );
-          })}
-        </div>
         <div className="Footer-links">
           {getFooterLinks(isHome).map(({ external, label, link, isAppLink }) => {
             if (external) {
