@@ -1,5 +1,5 @@
 .theme-dark:root {
-  --dark-blue-bg: #000000;
+  --dark-blue-bg: #000;
 
   --tv-color-pane-background: var(--dark-blue-bg);
   --tv-color-platform-background: var(--dark-blue-bg);
@@ -15,7 +15,7 @@
 
 html.theme-dark .chart-page {
   background-color: transparent;
-  font-family: "Relative", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 html.theme-dark .chart-container {
   border: none;

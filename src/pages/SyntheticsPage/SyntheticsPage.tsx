@@ -65,7 +65,7 @@ enum ListSection {
   Positions = "Positions",
   Orders = "Orders",
   Trades = "Trades",
-  Claims = "Claims",
+  //Claims = "Claims",
 }
 
 export function SyntheticsPage(p: Props) {
@@ -100,7 +100,7 @@ export function SyntheticsPage(p: Props) {
 
   const { errors: ordersErrorsCount, warnings: ordersWarningsCount } = useOrderErrorsCount();
   const ordersCount = useSelector(selectOrdersCount);
-  const positionsCount = useSelector((s) => Object.keys(selectPositionsInfoData(s) || {}).length);
+  const positionsCount = useSelector((s) => Object.keys(selectPositionsInfoData(s) || {}).length + 1);
   const totalClaimables = useSelector(selectClaimablesCount);
 
   const { savedAllowedSlippage, shouldShowPositionLines, setShouldShowPositionLines } = useSettings();
@@ -206,7 +206,7 @@ export function SyntheticsPage(p: Props) {
       [ListSection.Positions]: t`Positions${positionsCount ? ` (${positionsCount})` : ""}`,
       [ListSection.Orders]: renderOrdersTabTitle(),
       [ListSection.Trades]: t`Trades`,
-      [ListSection.Claims]: totalClaimables > 0 ? t`Claims (${totalClaimables})` : t`Claims`,
+      //[ListSection.Claims]: totalClaimables > 0 ? t`Claims (${totalClaimables})` : t`Claims`,
     }),
     [positionsCount, renderOrdersTabTitle, totalClaimables]
   );
@@ -311,7 +311,7 @@ export function SyntheticsPage(p: Props) {
                 />
               )}
               {listSection === ListSection.Trades && <TradeHistory account={account} />}
-              {listSection === ListSection.Claims && renderClaims()}
+              {/*{listSection === ListSection.Claims && renderClaims()}*/}
             </div>
           )}
         </div>
@@ -358,7 +358,7 @@ export function SyntheticsPage(p: Props) {
               />
             )}
             {listSection === ListSection.Trades && <TradeHistory account={account} />}
-            {listSection === ListSection.Claims && renderClaims()}
+            {/*{listSection === ListSection.Claims && renderClaims()}*/}
           </div>
         )}
       </div>
