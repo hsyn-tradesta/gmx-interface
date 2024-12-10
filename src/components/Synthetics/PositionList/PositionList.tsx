@@ -107,68 +107,36 @@ export function PositionList(p: Props) {
               <TableTh>
                 <Trans>Liq. Price</Trans>
               </TableTh>
-              <TableTh>
-                <Trans>Provider</Trans>
-              </TableTh>
-              {!isLoading && !p.hideActions && (
+              {/*{!isLoading && !p.hideActions && (
                 <>
                   <TableTh></TableTh>
                   <TableTh></TableTh>
                 </>
-              )}
+              )}*/}
             </TableTheadTr>
           </thead>
           <tbody>
             <TableTr>
               <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>BTC/USDT</Trans>
+                <Trans>WIF</Trans>
               </TableTd>
               <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>1 BTC</Trans>
+                <Trans>$27.43</Trans>
               </TableTd>
               <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>30000</Trans>
+                <Trans>$9.91</Trans>
               </TableTd>
               <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>4000</Trans>
+                <Trans>$9.97</Trans>
               </TableTd>
               <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>29588</Trans>
+                <Trans>$2.8506</Trans>
               </TableTd>
               <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>29589</Trans>
+                <Trans>$2.8579</Trans>
               </TableTd>
               <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>24000</Trans>
-              </TableTd>
-              <TableTd>
-                <img src={token1} className="big" alt="GMX Logo" />
-              </TableTd>
-            </TableTr>
-            <TableTr>
-              <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>BTC/USDT</Trans>
-              </TableTd>
-              <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>1 BTC</Trans>
-              </TableTd>
-              <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>30000</Trans>
-              </TableTd>
-              <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>4000</Trans>
-              </TableTd>
-              <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>29588</Trans>
-              </TableTd>
-              <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>29589</Trans>
-              </TableTd>
-              <TableTd style={{ fontWeight: "bold" }}>
-                <Trans>24000</Trans>
-              </TableTd>
-              <TableTd>
-                <img src={token2} className="big" alt="GMX Logo" />
+                <Trans>$3.7815</Trans>
               </TableTd>
             </TableTr>
             {/*{positions.length === 0 && (
