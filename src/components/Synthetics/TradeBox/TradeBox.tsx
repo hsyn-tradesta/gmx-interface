@@ -1287,7 +1287,7 @@ export function TradeBox(p: Props) {
           />
         )}
 
-        <MarketPoolSelectorRow />
+        {/* <MarketPoolSelectorRow /> */}
 
         <CollateralSelectorRow
           selectedMarketAddress={marketInfo?.marketTokenAddress}
